@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
+from sklearn.feature_extraction.text import TfidfVectorizer
 from waitress import serve
 
 app = Flask(__name__)
